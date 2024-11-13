@@ -2,7 +2,9 @@ import React, { useState, useEffect, useReducer } from 'react'
 import { Sun, Moon, Cloud, CloudRain, CloudSnow, CloudLightning, Wind, Search, X } from 'lucide-react'
 import { weatherReducer, initialState } from './reducers/weatherReducer'
 
-const API_KEY = '2faa54621cfe9ae78a65aa4540a03a36'
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
+
 
 const weatherIcons = {
   Clear: Sun,
