@@ -2,8 +2,8 @@ import React, { useState, useEffect, useReducer } from 'react'
 import { Sun, Moon, Cloud, CloudRain, CloudSnow, CloudLightning, Wind, Search, X } from 'lucide-react'
 import { weatherReducer, initialState } from './reducers/weatherReducer'
 
+//api key env dosyasından çekiliyor.
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-
 
 
 const weatherIcons = {
